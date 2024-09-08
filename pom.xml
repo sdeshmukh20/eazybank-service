@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.eazybytes</groupId>
 	<artifactId>eazybank-service</artifactId>
-	<version>release-1-u1</version>
+	<version>release-2-u2</version>
 	<name>eazybank-service</name>
 	<description>EazyBank Udemy Section-1</description>
 	<properties>
