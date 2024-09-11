@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.eazybytes</groupId>
 	<artifactId>eazybank-service</artifactId>
-	<version>release-3-u3</version>
+	<version>release-4-u4</version>
 	<name>eazybank-service</name>
-	<description>EazyBank Udemy Section-1</description>
+	<description>EazyBank Udemy Section-4</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -27,8 +27,26 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
