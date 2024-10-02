@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.eazybytes</groupId>
 	<artifactId>eazybank-service</artifactId>
-	<version>release-6-u8</version>
+	<version>release-7-u9</version>
 	<name>eazybank-service</name>
-	<description>EazyBank Udemy Section-8</description>
+	<description>EazyBank Udemy Section-10</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
