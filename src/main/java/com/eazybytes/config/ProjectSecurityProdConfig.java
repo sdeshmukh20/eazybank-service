@@ -46,7 +46,7 @@ public class ProjectSecurityProdConfig {
                     public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                         CorsConfiguration config = new CorsConfiguration();
                         config.setAllowedOrigins(Collections.singletonList("https://localhost:4200"));
-                        config.setAllowedMethods(Collections.singletonList("*"));
+                        config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                         config.setAllowCredentials(true);
                         config.setAllowedHeaders(Collections.singletonList("*"));
                         config.setExposedHeaders(Arrays.asList("Authorization"));
@@ -67,7 +67,7 @@ public class ProjectSecurityProdConfig {
                 .authorizeHttpRequests((requests) -> requests
                 .requestMatchers("/myAccount").hasRole("USER")
                 .requestMatchers("/myBalance").hasAnyRole("USER", "ADMIN")
-                .requestMatchers("/myLoans").hasRole("USER")
+                .requestMatchers("/myLoans").authenticated()
                 .requestMatchers("/myCards").hasRole("USER")
                 .requestMatchers("/user").authenticated()
                 .requestMatchers("/notices", "/contact", "/error", "/register", "/invalidSession", "/apiLogin").permitAll());
